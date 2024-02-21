@@ -11,8 +11,8 @@ server.use(express.json());
 routes(server);
 dotenv.config();
 
-server.listen(7000, () => {
-    console.log(`Ecoute sur le port 7000`);
+server.listen(3500, () => {
+    console.log('Ecoute sur le port 3500');
 
     mongoose.connect(process.env.MONGODB_URI,{
 
