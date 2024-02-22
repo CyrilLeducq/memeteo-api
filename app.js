@@ -11,8 +11,8 @@ server.use(express.json());
 routes(server);
 dotenv.config();
 
-server.listen(3500, () => {
-    console.log('Ecoute sur le port 3500');
+server.listen(7001, () => {
+    console.log('Ecoute sur le port 7001');
 
     mongoose.connect(process.env.MONGODB_URI,{
 
@@ -29,3 +29,4 @@ server.get("/bonjour", (req, res) => {
         result: "Hello World !"
     })
 });
+
